@@ -1,1 +1,103 @@
-dfkjdhfkjdfhdkfjd
+<!DOCTYPE html>
+<html>
+<head>
+	<title>National Quemoy University</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        border-style: solid;
+        border-color: cadetblue;
+    }
+    body {background-color:#d1b192;}
+    .text{
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: large;
+    }
+    td{
+        width: 10px;
+        height: 10px;
+    }
+</style>
+<body>
+	<h1>Registration Form</h1>
+    
+    <form>
+    	<table>
+           <tr>
+               <td class = "text"><label for="Name">Name</label></td>
+               <td><input type="text" id="Name" name="Name"></td>
+           </tr>
+
+           <tr>
+               <td class = "text"><label for="id">Student Number</label></td>
+               <td><input type="text" id="id" name="id"></td>
+           </tr>
+
+           <tr>
+               <td class = "text"><label for="birth">Date of Birth</label></td>
+               <td><input type="date" id="birth" name="birth"></td>
+           </tr>
+
+           <tr>
+               <td class = "text"><label>Gender</label></td>
+               <td>
+                   <input type="radio" id="man" name="gender" value="man">
+                   <label for="man">Man</label>
+
+                   <input type="radio" id="woman" name="gender" value="woman">
+                   <label for="woman">Woman</label>
+               </td>
+           </tr>
+
+           <tr>
+               <td class = "text"><label>Class</label></td>
+               <td>
+                <select id="depart" name="depart">
+                    <option value="ec">Year 1</option>
+                    <option value="fs">Year 2</option>
+                    <option value="ce">Year 3</option>
+                    <option value="cs">Year 4</option>
+                </select>
+               </td>
+           </tr>
+
+           <tr>
+               <td class = "text"><label>Department</label></td>
+               <td>
+                  <select id="depart" name="depart">
+                      <option value="ee">Electrical Engineering</option>
+                      <option value="fs">Food Science</option>
+                      <option value="ce">Civil Engineering</option>
+                      <option value="cs">Computer Science</option>
+                      <option value="ns">Nursery</option>
+                      <option value="ba">Bussiness Administration</option>
+                      <option value="tm">Tourism</option>
+                  </select>
+               </td>
+           </tr>
+
+           <tr>
+               <td class = "text"><label for="address">Address</label></td>
+               <td><textarea name="address" rows="2" cols="50"></textarea></td>
+           </tr>
+
+           <tr>
+               <td class = "text"><label for="email">Email</label></td>
+               <td><input type="email" id="email" name="email" required></td>
+           </tr>
+           
+           <tr>
+              <td>
+              <br>
+                <input type="submit" value="Submit" style="background-color: #4CAF50;">
+                <input type="reset" value="Reset" style="background-color: #f44336">
+              </td>
+              </tr>
+
+      </table>
+   </form>
+</body>
+</html>
