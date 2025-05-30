@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorSplash - Vibrant One-Page Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="rainbow-header">
+        <div class="container">
+            <h1>ColorSplash</h1>
+            <p>Your destination for vibrant products</p>
+        </div>
+        <div class="cart-icon" id="cartIcon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#home-decor">Home Decor</a></li>
+            <li><a href="#stationery">Stationery</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Summer Collection 2023</h2>
+            <p>Brighten your world with our colorful products</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </div>
+
+    <section id="featured" class="product-section">
+        <h2>Featured Products</h2>
+        <div class="products-container" id="featuredProducts"></div>
+    </section>
+
+    <section id="home-decor" class="product-section">
+        <h2>Home Decor</h2>
+        <div class="products-container" id="homeDecorProducts"></div>
+    </section>
+
+    <section id="stationery" class="product-section">
+        <h2>Stationery</h2>
+        <div class="products-container" id="stationeryProducts"></div>
+    </section>
+
+    <section id="accessories" class="product-section">
+        <h2>Accessories</h2>
+        <div class="products-container" id="accessoriesProducts"></div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="colorful-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ColorSplash</h3>
+                <p>Bringing color to your everyday life since 2020.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#home-decor">Home Decor</a></li>
+                    <li><a href="#stationery">Stationery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ColorSplash. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-total">
+                <p>Total: $<span id="cartTotal">0.00</span></p>
+                <button class="checkout-button">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
